@@ -1,3 +1,6 @@
+require 'file_exists'
+require 'net/scp'
+
 # Load DSL and set up stages
 require "capistrano/setup"
 require "capistrano/rbenv"
@@ -5,6 +8,7 @@ require "capistrano/rbenv"
 # Include default deployment tasks
 require "capistrano/deploy"
 
+require "capistrano/secrets_yml"
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"

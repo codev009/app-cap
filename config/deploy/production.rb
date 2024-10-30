@@ -38,7 +38,7 @@
 set(
   :ssh_options,
   {
-    keys: %w[/home/user_name/.ssh/id_rsa],
+    keys: %w[/home/codev/.ssh/id_rsa],
     forward_agent: false,
     auth_methods: %w[password]
   }
@@ -47,7 +47,7 @@ set(
 # The server-based syntax can be used to override options:
 # ------------------------------------
 server(
-  "paritybuy.com",
+  "51.222.139.74",
   user: "ubuntu",
   roles: %w[web db app]
   # ssh_options: {

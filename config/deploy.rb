@@ -1,11 +1,12 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.19.1"
+lock("~> 3.19.1")
 
-set :application, "app-cap"
-set :repo_url, "git@example.com:me/my_repo.git"
+set(:application, "app-cap")
+set(:repo_url, "git@github.com:codev009/app-cap.git")
 
-set :set :rbenv_type, :user # or :system, or :fullstaq (for Fullstaq Ruby), depends on your rbenv setup
-set :rbenv_ruby, '3.3.5'
+# or :system, or :fullstaq (for Fullstaq Ruby), depends on your rbenv setup
+set(:rbenv_type, :user)
+set(:rbenv_ruby, "3.3.5")
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 

@@ -40,3 +40,15 @@ set(:rbenv_ruby, "3.3.5")
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
+namespace(:deploy) do
+  desc("Run seed")
+  task(:seed) do
+    on(roles(:all)) do
+      within(current_path) do
+        execute(:bundle, :exec, "rails", "db:seed", "RAILS_ENV=production")
+      end
+    end
+  end
+
+  after(:migrating, :seed)
+end

@@ -36,3 +36,4 @@
 /config/secrets.yml
 
 /config/credentials/production.key
+config/secrets.yml

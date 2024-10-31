@@ -5,7 +5,7 @@ set(:application, "app-cap")
 set(:repo_url, "git@github.com:codev009/app-cap.git")
 
 # or :system, or :fullstaq (for Fullstaq Ruby), depends on your rbenv setup
-set(:rbenv_type, :user)
+set(:rbenv_type, :system)
 set(:rbenv_ruby, "3.3.5")
 # Default branch is :master
 set(:branch, "main")

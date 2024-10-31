@@ -35,4 +35,4 @@
 /config/master.key
 /config/secrets.yml
 
-/config/credentials/production.key
+# /config/credentials/production.key

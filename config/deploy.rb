@@ -5,8 +5,16 @@ set(:application, "app-cap")
 set(:repo_url, "git@github.com:codev009/app-cap.git")
 
 # or :system, or :fullstaq (for Fullstaq Ruby), depends on your rbenv setup
-set(:rbenv_type, :system)
+set(:rbenv_type, :ubuntu)
 set(:rbenv_ruby, "3.3.5")
+set(
+  :default_env,
+  {
+    path: "/usr/local/rbenv/plugins/ruby-build/bin:/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH",
+    rbenv_root: "/usr/local/rbenv"
+  }
+)
+set(:rbenv_roles, :all)
 # Default branch is :master
 set(:branch, "main")
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

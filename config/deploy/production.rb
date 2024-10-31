@@ -49,7 +49,7 @@ set(
 server(
   "51.222.139.74",
   user: "ubuntu",
-  roles: %w[web db app]
+  roles: %w[web app db]
   # ssh_options: {
   #   # overrides user setting above
   #   user: "user_name",

@@ -8,10 +8,11 @@ set(:repo_url, "git@github.com:codev009/app-cap.git")
 set(:rbenv_type, :user)
 set(:rbenv_ruby, "3.3.5")
 # Default branch is :master
+set(:branch, "main")
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
+set(:deploy_to, "/var/www/app-cap")
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

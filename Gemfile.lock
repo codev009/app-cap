@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/net-ssh/net-ssh.git
-  revision: 5fa6a0cf89a6d63ffde704990b2437720da89d66
+  revision: d9549e4226dc3aed12efcca24a8b6d349143f398
   branch: master
   specs:
     net-ssh (7.3.0)
